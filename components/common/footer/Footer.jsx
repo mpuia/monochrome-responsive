@@ -1,18 +1,17 @@
 import Link from 'next/link';
+import FooterConnect from "./FooterConnect";
+import FooterContact from './FooterContact';
+import FooterNav from './FooterNav';
 
 export default function Footer() {
   return (
     <section className="footer mt-11">
-      <div className="footer-inner container">
-    <section className="footer-contact d-none d-lg-block">
-    <ul>
-      <li>
-        <a href="tel:+44 (0)10 2345 6789" title="Call us">
-          call us <span>+44 (0)10 2345 6789</span>
-        </a>
-      </li>
-    </ul>
-    </section>
+      <div className="footer-inner py-lg-5 gap-10 container">
+        <FooterContact></FooterContact>
+
+        <FooterNav></FooterNav>
+
+        <FooterConnect></FooterConnect>
       </div>
     </section>
   );

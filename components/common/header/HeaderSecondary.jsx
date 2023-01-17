@@ -3,7 +3,7 @@ import Link from 'next/link';
 export default function HeaderSecondary() {
   return (
     <>
-    <section className="header-secondary-inner container">
+    <section className="header-secondary-inner my-2 my-lg-0 pt-lg-0 container">
     <div className="header-connect d-none d-lg-block">
     <ul>
       <li>
@@ -60,7 +60,7 @@ export default function HeaderSecondary() {
         <button type="submit">
         <i className="fa-solid fa-magnifying-glass"></i>
         </button>
-        <input type="text" name="Search" placeholder="Search"/>
+        <input type="search" name="Search" placeholder="Search"/>
       </form>
 
       <ul>

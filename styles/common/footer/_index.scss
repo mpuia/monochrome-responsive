@@ -1,0 +1,29 @@
+@import './footer-contact';
+@import './footer-connect';
+@import './footer-nav';
+
+.footer {
+  background-color: $brand-primary;
+  color: $white;
+
+  @include media-breakpoint-up(lg) {
+    background-color: $brand-tertiary;
+    color: $brand-primary;
+  }
+
+  .footer-inner {
+    max-width: 1296px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    display: grid;
+    grid-template-areas: 'contact' 'nav' 'connect';
+
+    @include media-breakpoint-up(lg) {
+      text-align: start;
+      grid-template-areas: 'contact nav connect';
+      font-size: 20px;
+      column-gap: 200px;
+    }
+  }
+}

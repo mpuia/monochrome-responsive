@@ -12,7 +12,8 @@ export default function HeaderPrimary() {
       </li>
 
       <li>
-        <form className="header-search">
+        <form method="GET"
+        className="header-search">
           <input type="text" name="search" placeholder="Search"/>
           <button type="submit">
           <i className="fa-solid fa-magnifying-glass"></i>

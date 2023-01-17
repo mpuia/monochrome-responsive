@@ -1,0 +1,56 @@
+.button {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  background-color: $white;
+  color: $brand-primary;
+  border: 1px solid $black;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+
+  &:hover {
+    background-color: $brand-secondary;
+    color: $brand-tertiary;
+  }
+
+  &-primary {
+    font-size: 12px;
+    padding: 4px 18px;
+    text-transform: uppercase;
+  }
+
+  &-secondary {
+    font-size: 14px;
+    padding: 4px 16px;
+    background-color: transparent;
+    text-transform: uppercase;
+
+    &:hover {
+      background-color: $brand-primary;
+      color: $white;
+    }
+  }
+
+  &-small {
+    font-size: 12px;
+    padding: 6px 16px;
+    font-weight: 400;
+    text-transform: lowercase;
+  }
+
+  &-large {
+    font-size: 22px;
+    padding: 8px 18px;
+    font-weight: 400;
+    text-transform: lowercase;
+  }
+
+  &-inverted {
+    background-color: $brand-primary;
+    color: $brand-tertiary;
+    text-transform: uppercase;
+
+    &:hover {
+      background-color: $white;
+      color: $black;
+    }
+  }
+}

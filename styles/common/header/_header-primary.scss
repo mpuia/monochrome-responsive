@@ -1,0 +1,63 @@
+.header-primary {
+  background-color: $brand-primary;
+  color: $white;
+  padding: 15px;
+
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    li > a {
+      font-size: 32px;
+      text-transform: uppercase;
+    }
+
+    .header-search {
+      border: 1px solid $brand-secondary;
+
+      button {
+        border-style: none;
+        background: transparent;
+        outline: none;
+        color: $brand-secondary;
+        font-size: 20px;
+      }
+
+      input {
+        font-family: 'Roboto', sans-serif;
+        border-style: none;
+        outline: none;
+        background: transparent;
+        font-size: 16px;
+        font-style: italic;
+        text-transform: lowercase;
+        color: $brand-secondary;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    ul {
+      display: flex;
+      justify-content: space-between;
+
+      li {
+        transition: transform 0.5s linear;
+        &:hover {
+          transform: scale(1.2);
+        }
+
+        a {
+          color: $brand-tertiary;
+          font-size: 20px;
+          text-transform: uppercase;
+          transition: color 0.3s ease-in-out;
+          &:hover {
+            color: $brand-secondary;
+          }
+        }
+      }
+    }
+  }
+}

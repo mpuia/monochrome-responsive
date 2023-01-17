@@ -11,6 +11,19 @@
 @import './../node_modules/bootstrap/scss/bootstrap-reboot';
 @import './../node_modules/bootstrap/scss/bootstrap-grid';
 @import './../node_modules/bootstrap/scss/bootstrap-utilities';
+@import './../node_modules/bootstrap/scss/bootstrap.scss';
 
 // reset
 @import './reset';
+
+// variables
+@import './variables';
+
+// common
+@import './common/index';
+
+body {
+  font-size: 16px;
+  font-family: 'Playfair Display', serif;
+  color: $brand-primary;
+}
